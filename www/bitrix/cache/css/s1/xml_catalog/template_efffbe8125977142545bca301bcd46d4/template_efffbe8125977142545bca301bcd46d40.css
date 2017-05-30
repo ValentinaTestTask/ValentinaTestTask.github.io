@@ -1,0 +1,874 @@
+
+/* Start:/bitrix/templates/xml_catalog/components/bitrix/menu/horizontal_multilevel_silver/style.css?14950245694965*/
+/**Top menu**/
+#horizontal-multilevel-menu,#horizontal-multilevel-menu ul
+{
+	margin:0; padding:0;
+	background:#FAFAFA url(/bitrix/templates/xml_catalog/components/bitrix/menu/horizontal_multilevel_silver/images/header_menu_bg.gif) repeat-x;
+	min-height:35px;
+	width:100%;
+	list-style:none;
+	font-size:11px;
+	float:left;
+	/*font-size:90%*/
+		box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	height:35px;
+}
+
+#horizontal-multilevel-menu
+{
+}
+
+/*Links*/
+#horizontal-multilevel-menu a
+{
+	display:block;
+	padding:5px 10px;
+	/*padding:0.3em 0.8em;*/
+	text-decoration:none;
+	text-align:center;
+}
+
+#horizontal-multilevel-menu li 
+{
+	float:left;
+}
+
+/*Root items*/
+#horizontal-multilevel-menu li a.root-item
+{
+	color:#404040;
+	font-weight:bold;
+	font-size:11px;
+	white-space:nowrap;
+	padding:9px 10px;
+}
+
+div.root-separator
+{
+	width:1px;
+	height:31px;
+	float:left;
+	background:url(/bitrix/templates/xml_catalog/components/bitrix/menu/horizontal_multilevel_silver/images/separator.gif) center top no-repeat;
+}
+
+/*Root menu selected*/
+#horizontal-multilevel-menu li a.root-item-selected
+{
+	background:#D5D5D5 url(/bitrix/templates/xml_catalog/components/bitrix/menu/horizontal_multilevel_silver/images/active.gif) repeat-x;
+	color:#404040;
+	font-weight:bold;
+	font-size:11px;
+	padding:9px 10px;
+}
+
+/*Root items: hover*/
+#horizontal-multilevel-menu li:hover a.root-item, #horizontal-multilevel-menu li.jshover a.root-item
+{
+	background:#E0E0E0 url(/bitrix/templates/xml_catalog/components/bitrix/menu/horizontal_multilevel_silver/images/hover.gif) repeat-x;
+	color:#404040;
+	font-size:11px;
+	padding:9px 10px;
+}
+
+/*Item-parents*/
+#horizontal-multilevel-menu a.parent
+{
+	background: url(/bitrix/templates/xml_catalog/components/bitrix/menu/horizontal_multilevel_silver/images/arrow.gif) center right no-repeat;
+}
+
+/*Denied items*/
+#horizontal-multilevel-menu a.denied
+{
+	background: url(/bitrix/templates/xml_catalog/components/bitrix/menu/horizontal_multilevel_silver/images/lock.gif) center right no-repeat;
+}
+
+/*Child-items: hover*/
+#horizontal-multilevel-menu li:hover, #horizontal-multilevel-menu li.jshover
+{
+	background:#D6D6D6;
+	color:#fff;
+}
+
+/*Child-items selected*/
+#horizontal-multilevel-menu li.item-selected
+{
+	background:#E8E8E8;
+	color:#fff;
+}
+
+/*Sub-menu box*/
+#horizontal-multilevel-menu li ul
+{
+	position:absolute;
+	/*top:-999em;*/
+	top:auto;
+	display:none;
+	z-index:500;
+
+	height:auto;
+	/*width:12em;*/
+	width:135px;
+	background:#F5F5F5;
+	border:1px solid #C1C1C1;
+}
+
+/*Sub-menu item box*/
+#horizontal-multilevel-menu li li 
+{
+	width:100%;
+	border-bottom:1px solid #DEDEDE;
+}
+
+/*Item link*/
+#horizontal-multilevel-menu li ul a
+{
+	text-align:left;
+}
+
+/*Items text color & size */
+#horizontal-multilevel-menu li a,
+#horizontal-multilevel-menu li:hover li a,
+#horizontal-multilevel-menu li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li a
+{
+	color:#4F4F4F;
+	font-weight:bold;
+}
+
+/*Items text color & size: hover*/
+#horizontal-multilevel-menu li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover a,
+#horizontal-multilevel-menu li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover a
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover a
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li.jshover a
+{
+	color:#4F4F4F;
+}
+
+#horizontal-multilevel-menu li ul ul
+{
+	margin:-27px 0 0 132px;
+	/*margin:-1.93em 0 0 11.6em;*/
+}
+
+#horizontal-multilevel-menu li:hover ul ul,
+#horizontal-multilevel-menu li.jshover ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul ul ul
+{
+	/*top:-999em;*/
+	display:none;
+}
+
+#horizontal-multilevel-menu li:hover ul,
+#horizontal-multilevel-menu li.jshover ul,
+#horizontal-multilevel-menu li li:hover ul,
+#horizontal-multilevel-menu li li.jshover ul,
+#horizontal-multilevel-menu li li li:hover ul,
+#horizontal-multilevel-menu li li li.jshover ul,
+#horizontal-multilevel-menu li li li li:hover ul,
+#horizontal-multilevel-menu li li li li.jshover ul,
+#horizontal-multilevel-menu li li li li li:hover ul,
+#horizontal-multilevel-menu li li li li li.jshover ul
+{
+	/*z-index:1000;
+	top:auto;*/
+	display:block;
+}
+
+div.menu-clear-left
+{
+	clear:left;
+}
+/* End */
+
+/* Start:/bitrix/templates/xml_catalog/components/bitrix/menu/left/style.css?1495024569635*/
+/* Left menu*/
+ul.left-menu
+{
+	list-style:none;
+	margin:0; padding:0;
+	position: relative; /*IE bug*/
+}
+
+ul.left-menu li
+{
+	padding: 4px 16px;
+	margin:0 5px 5px 5px;
+	background:#E7E4D4 url(/bitrix/templates/xml_catalog/components/bitrix/menu/left/images/left_menu_bg.gif) right top no-repeat;
+}
+
+ul.left-menu li a
+{
+	font-size:100%;
+	color:#030302;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+ul.left-menu li a:visited
+{
+	color:#030302;
+}
+
+ul.left-menu li a:hover
+{
+	color:#030302;
+}
+
+
+ul.left-menu li a.selected:link, 
+ul.left-menu li a.selected:visited, 
+ul.left-menu li a.selected:active, 
+ul.left-menu li a.selected:hover
+{
+	color:#D30B00;
+}
+
+
+
+/* End */
+
+/* Start:/bitrix/components/bitrix/system.auth.form/templates/.default/style.min.css?1495024258424*/
+div.bx-system-auth-form span.bx-auth-secure{background-color:#fffae3;border:1px solid #dedbc8;padding:2px;display:inline-block;vertical-align:bottom;margin-top:-1px}div.bx-system-auth-form div.bx-auth-secure-icon{background-image:url(/bitrix/components/bitrix/system.auth.form/templates/.default/images/sec.png);background-repeat:no-repeat;background-position:center;width:19px;height:18px}div.bx-system-auth-form div.bx-auth-secure-unlock{background-image:url(/bitrix/components/bitrix/system.auth.form/templates/.default/images/sec-unlocked.png)}
+/* End */
+
+/* Start:/bitrix/components/bitrix/breadcrumb/templates/.default/style.min.css?1495024240448*/
+.bx-breadcrumb{margin:10px 0}.bx-breadcrumb i{color:#b5bdc2;line-height:13px;font-size:12px;vertical-align:middle;margin-right:5px}.bx-breadcrumb .bx-breadcrumb-item{float:left;margin-bottom:10px;white-space:nowrap;line-height:13px;vertical-align:middle;margin-right:10px}.bx-breadcrumb .bx-breadcrumb-item span{font-family:"Open Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:13px}.bx-breadcrumb .bx-breadcrumb-item a{border-bottom:0}
+/* End */
+
+/* Start:/bitrix/templates/xml_catalog/styles.css?14950245691122*/
+
+h1, h2, h3, h4, h5, h6
+{
+	color:#4F4F4F;
+}
+
+
+h1
+{
+	margin:0; padding:0;
+	font-size:120%;
+	margin-bottom:8px;
+	padding-bottom:15px;
+	padding-top:14px;
+	border-bottom:1px dashed #C4C4C3;
+}
+
+h2, h3
+{
+	font-size:120%;
+}
+
+h2
+{
+	padding-top:15px;
+	padding-bottom:5px;
+	border-bottom:1px dashed #C4C4C3;
+}
+
+h4, h5, h6
+{
+	font-size:110%;
+}
+
+/*Information block*/
+.information-block
+{
+	width:185px;
+	margin-top:10px;
+	margin-right:10px;
+	padding:10px;
+	border:1px solid #BFBFBF;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+.information-block-head
+{
+	color:#979797;
+	font-weight:bold;
+	font-size:85%;
+	border-bottom:1px solid #B5B5B5;
+	margin-bottom:4px;
+	padding-bottom:5px;
+}
+
+.information-block-body
+{
+	font-size:85%;
+	color:#737373;
+	margin-right:20px;
+}
+
+code
+{
+	font-size:100%;
+	font-weight:normal;
+	display:block;
+	padding:1.5em 1em 1em 1em;
+	border-style:solid;
+	border-width:1px;
+	border-width:1px 0;
+	border-color:#C4C4C3;
+	margin:1em 0;
+	background-color:#F5F2E6;
+	font-family:sans-serif;
+}
+
+.news-date-time
+{
+	color:#E19813;
+}
+/* End */
+
+/* Start:/bitrix/templates/xml_catalog/template_styles.css?149502457211652*/
+html, body, form
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	height:100%;
+}
+
+body
+{
+	height:auto !important;
+	height:100%;
+	min-height:100%;
+	min-width:760px;
+}
+
+/*Font*/
+body
+{
+	font-size: 80%;
+	font-family: Tahoma, Verdana, Helvetica, sans-serif;
+	color: #333;
+	background-color: #fff;
+}
+
+/*Font in table*/
+table
+{
+	font-size:100%;
+}
+
+/*Links*/
+a:link {color: #E19813;}
+a:visited{color:#CBB997;}
+a:active {color: #D30B00;}
+a:hover{color:#D30B00;}
+
+
+small
+{
+	font-size:85%;
+}
+
+hr
+{
+	width:100%;
+	height: 1px;
+	border: medium none;
+	color: #d1d0d0;
+	background-color: #d1d0d0;
+	margin:8px 0;
+}
+
+#container
+{
+	min-width:775px;
+	width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 775 ? "775px": "auto");
+}
+
+#header
+{
+	position:relative; /*containing block*/
+	height:106px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	background: #505050 url(/bitrix/templates/xml_catalog/images/header_bg.gif) repeat-x;
+}
+
+#header_logo
+{
+	position:absolute;
+}
+
+#company_logo
+{
+	width:100px; 
+	height:106px; 
+	background:url(/bitrix/templates/xml_catalog/images/logo.gif) center right no-repeat; 
+	position:absolute; 
+	left:200px; 
+}
+
+#header_text
+{
+	position:absolute;
+	left:310px;
+	top: 30%;
+	color:#fff;
+	width:490px;
+}
+
+#header_text .bx-main-title
+{
+	margin:0;
+	padding:0;
+	font-size:160%;
+	border:none;
+	color:#fff;
+	background:url(/bitrix/templates/xml_catalog/images/line.gif) left bottom no-repeat;
+	text-decoration:none;
+}
+
+#header_text .bx-main-subtitle
+{
+	font-size:90%;
+	font-weight:bold;
+	color:#B3B3B3;
+	margin-left:50px;
+}
+
+/* Header menu: home, search, feedback*/
+#header_menu
+{
+	background:#505050 url(/bitrix/templates/xml_catalog/images/header_menu_corner.gif) left bottom no-repeat;
+	position:absolute;
+	right:55px;
+	top:6px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+#header_menu a
+{
+	display:block;
+	float:left;
+	cursor:pointer; cursor: hand;
+	padding:8px 11px;
+}
+
+#header_sites
+{
+	position:absolute;
+	right:55px;
+	top: 60px;
+	color:#fff;
+	text-align:right;
+}
+
+#header_sites a, #header_sites span
+{
+	color:#fff;
+	text-decoration:none;
+}
+
+#header_sites span
+{
+	color: #bbb;
+}
+
+td.navigation-column
+{
+	padding-right:23px;
+}
+
+td.search-column
+{
+	padding-right:10px;
+}
+
+#navigation
+{
+
+}
+
+/*Navigation*/
+#navigation a
+{
+	font-size:95%;
+	text-decoration:none;
+	color:#535353;
+}
+
+
+
+/*Content table*/
+#content
+{
+	width:100%;
+	height:70%;
+	border-collapse:collapse;
+}
+
+/*Left column*/
+#content .left-column
+{
+	width:200px;
+	vertical-align:top;
+	height:100%;
+	padding:0;
+}
+
+#content_block_container
+{
+	border-left:1px solid #D2D0C6;
+	border-right:1px solid #D2D0C6;
+	margin-left:7px;
+	background:#F5F2E6;
+}
+
+/*Shadow column*/
+#content .shadow-column
+{
+	padding:0;
+	padding-top:79px;
+}
+
+p.news-item
+{
+	margin-top:0;
+}
+
+/*Main column*/
+#content .main-column
+{
+	width:100%;
+	vertical-align:top;
+	padding:0 10px;
+}
+
+/*Right column*/
+#content .right-column
+{
+	width:1px;
+	vertical-align:top;
+}
+
+/*Bottom banner*/
+#bottom_banner
+{
+	padding:10px;
+	text-align:center;
+}
+
+/*Footer*/
+#footer
+{
+	background: #E4E4E4;
+	text-align:right;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	height:40px;
+	padding:8px;
+	
+}
+
+/*Link in footer*/
+#footer a
+{
+	color: #333;
+	font-size: 100%;
+}
+
+/*Content block*/
+.content-block
+{
+	width:100%;
+}
+
+.content-block-head-corner
+{
+	background:url(/bitrix/templates/xml_catalog/images/content_block_left.gif) left bottom no-repeat;
+}
+
+.content-block-head
+{
+	background:#E9E6D7 url(/bitrix/templates/xml_catalog/images/content_block_bg.gif) right top  repeat-x;margin-left:18px;
+	font-weight:bold;
+	font-size:95%;
+	padding: 6px 5px 5px 0px;
+	height:23px;
+	overflow:hidden;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+.content-block-body
+{
+	width:100%;
+	background:#F5F2E6;
+	padding:15px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+#search-box
+{
+	background:#F4F4F4;
+	border:1px solid #C5C5C5;
+	padding:8px;
+	color:#5F5F5F;
+	width:185px;
+	margin-right:10px;
+	margin-top:4px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+/*Data table*/
+table.data-table
+{
+	border:1px solid #C4C4C3;
+	border-collapse:collapse;
+}
+
+/*Any cell*/
+table.data-table td
+{
+	border:1px solid #C4C4C3;
+	background-color:#FFFFFF;
+	color:#333;
+	padding:3px 5px;
+}
+
+/*Head cell*/
+table.data-table thead td, table.data-table th
+{
+	background-color:#F5F2E6;
+	text-align:left;
+	font-weight:normal;
+	background-image:none;
+	border:1px solid #C4C4C3;
+	padding:4px;
+	color:#333;
+}
+
+/*Body cell*/
+table.data-table tbody td
+{
+	background-color:#FFF;
+	background-image:none;
+	color:#333;
+}
+
+/*Foot cell*/
+table.data-table tfoot td
+{
+	background-color:#fff;
+	padding:4px;
+	color:#333;
+}
+
+
+
+/*Error & OK messages*/
+.errortext
+{
+	color:red;
+}
+
+.notetext
+{
+	color:green;
+}
+
+/* Used to draw a "star" near reqired field */
+.starrequired
+{
+	color:red;
+}
+
+/*Forum*/
+
+
+/*Forum menu*/ 
+table.forum-menu {border-left: 1px solid #DAE7DF; border-top: 1px solid #DAE7DF; } 
+table.forum-menu td.forumtoolbar {background-color: #F5F2E6; border-left: 1px solid #FFFFFF;border-top: 1px solid #FFFFFF; border-right: 1px solid #C4C4C3; border-bottom: 1px solid #C4C4C3; } 
+.forumtoolsection {border-left: 1px solid #FFFFFF;border-top: 1px solid #FFFFFF; border-right: 1px solid #C4C4C3; border-bottom: 1px solid #C4C4C3; } 
+.forumtoolseparator {border-left: 1px solid #C4C4C3;border-right: 1px solid #FFFFFF; } 
+
+table.forum-menu a, table.forum-menu select, table.forum-menu input, table.forum-menu td {color:#333}
+
+/* menu popup */
+.forum-menu-hidden-in {border: 1px solid #C4C4C3;} 
+table.forum-menu-popup-table td, table.forum-menu-popup-table td a { color: black;} 
+table.forum-menu-popup-table td.forum-menu-popup, table.forum-menu-popup-table td.forum-menu-popup-hover {border: none; background-color: #F5F2E6; } 
+table.forum-menu-popup-table td.forum-group{background-color:#F5F2E6; color:#333;} 
+table.forum-menu-popup-table td.forum-menu-popup-hover {background-color: #FBFAF5;} 
+div.forum-group{background-color:#F9FBF9; font-weight:bold; color:#333;} 
+
+/*Forum index and list*/ 
+table.forum-main {border: 1px solid #C4C4C3;} 
+table.forum-main td {background-color:#FBFAF5;border: 1px solid #C4C4C3;} 
+table.forum-main th {background-color:#F5F2E6;border: 1px solid #C4C4C3;color: #333;vertical-align: top;} 
+
+div.forum-hr {background-color:#C4C4C3}
+div.filter-check-hover {background-color:#F5F2E6}
+
+a.forum-button:link,a.forum-button:visited,a.forum-button:active,a.forum-button:hover {background: #F5F2E6;border: 1px solid #C4C4C3;color: #333;} 
+table.forum-main td small {font-size:100%;} 
+table.forum-main td.forum-group {background-color:#F5F2E6; color:#333;} 
+div.forum-title {border: 1px solid #C4C4C3; padding: 5px; background-color: #F5F2E6 !important; color:#333; } 
+
+/*Forum messages*/ 
+table.forum-message {} 
+table.forum-message td {background-color: #FBFAF5;border: none;} 
+table.forum-message td.forum-message-user-info {background-color: #FBFAF5;border: 1px solid #C4C4C3;border-right-width: 1px;} 
+table.forum-message td.border-top {border: 1px solid #C4C4C3;border-left-width: 1px;border-top: none;} 
+table.forum-message td.border-bottom {border: 1px solid #C4C4C3;border-left-width: 1px;border-bottom: none;} 
+
+table.forum-message .forum-message-posts, 
+table.forum-message .forum-message-status, 
+table.forum-message .forum-message-datereg, 
+table.forum-message .forum-message-datecreate {color:#333;} 
+
+a.forum-button-small,
+a.forum-button-small-vote,
+a.forum-button-small-unvote 
+{
+	background-color: #F5F2E6;
+	border: 1px solid #C4C4C3;
+	color: #333; 
+	font-size: 11px; 
+	height:20px;
+	padding: 2px 5px 2px 5px;
+	box-sizing:border-box; -moz-box-sizing:border-box;
+}
+a.forum-button-small-vote, a.forum-button-small-unvote {padding-left:18px;}
+a.forum-button-small:hover,a.forum-button-small-vote:hover,a.forum-button-small-unvote:hover {color: #333; } 
+
+/*Forum statistics*/ 
+table.forum-stat {} 
+table.forum-stat th {background-color:#F5F2E6;border: 1px solid #C4C4C3;color: #333;font-weight:bold;padding:5px;} 
+table.forum-stat td {background-color:#FBFAF5;border: 1px solid #C4C4C3;} 
+table.forum-stat .forum-attention{font-size: 100%;color: black;} 
+
+/*Post form*/ 
+table.forum-post-form {border: 1px solid #C4C4C3;} 
+table.forum-post-form td {background-color:#FBFAF5;border: 1px solid #C4C4C3;} 
+table.forum-post-form th {background-color:#F5F2E6;border: 1px solid #C4C4C3;} 
+table.forum-smile {border: 1px solid #C4C4C3;} 
+table.forum-smile th {background-color:#F5F2E6;border: 1px solid #C4C4C3;} 
+table.forum-smile img { margin: 0px;} 
+textarea#POST_MESSAGE{width:100%;} 
+
+/* Only for user-profile*/ 
+table.fuser {} 
+table.fuser-static th {background-color:#F5F2E6; border:1px solid #C4C4C3;} 
+table.fuser-static td {background-color:#FBFAF5; border:1px solid #C4C4C3;} 
+
+/* Tab controls*/ 
+table.tabs {border-left:1px solid #C4C4C3;} 
+table.tabs td {} 
+table.tabs td.tab-indent-left {border-bottom:1px solid #C4C4C3;} 
+table.tabs td.tab-indent-right {border-bottom:1px solid #C4C4C3;} 
+table.tabs td.tab-container {border:1px solid #C4C4C3; border-left: none;} 
+table.tabs td.tab-container-selected {border:1px solid #C4C4C3; border-bottom:1px solid #F9FBF9; border-left: none; background-color:#F9FBF9;} 
+
+table.tabs table td.tab {border-top:1px solid #C4C4C3;} 
+table.tabs table td.tab-selected {border-top:1px solid red;} 
+table.tabs table td.tab-hover {border-top:1px solid #C4C4C3;} 
+
+/* Tab inside edit form */ 
+table.tab {border:1px solid #C4C4C3; border-top:none;} 
+table.tab td {background-color:#FBFAF5;}
+
+.forum-menu-hidden-in
+{
+	max-height:100px;
+	height:expression(this.scrollHeight > 100? "100px" : "auto");
+}
+
+table.forum-quote td, table.forum-code td 
+{
+	background-color:#F5F2E6; /*th*/
+	border:1px solid #C4C4C3;
+}
+
+table.forum-reviews-messages td, table.forum-reviews-messages th
+{
+	background-color:#FBFAF5; /*td*/
+	border-color:#C4C4C3;
+}
+
+a.button-small
+{
+	background:#F5F2E6;
+	border:1px solid #C4C4C3;
+}
+
+
+/*Support*/
+div.ticket-edit-message
+{
+	border-color: #C4C4C3;
+}
+
+/*Blogs*/
+
+table.blog-table-post td, table.blog-table-post th, table.blog-blog-edit th, table.blog-user-table td.head, table.blog-table-post-comment td, table.blog-table-post-comment th
+{
+	background-color:#FBFAF5;
+}
+
+
+table.blog-blog-edit td, table.blog-blog-edit-table-smiles, table.blog-table-post td, table.blog-table-post th, table.blog-blog-edit th,
+table.blog-user-table td.head, table.blog-user-table td, table.blog-group td, table.blog-category td, table.blog-comment-form th, table.blog-comment-form td,
+table.blog-table-post-comment td, table.blog-table-post-comment th
+{
+	border-color: #C4C4C3;
+}
+
+.blog-post-date 
+{
+	color:#333;
+}
+
+table.blog-table-post-table th, table.blog-table-post-table td, table.blog-table-post-comment-table th, table.blog-table-post-comment-table td
+{
+	font-size:95%;
+}
+
+.blogtoolblock {border-color:#C4C4C3;}
+.blogtoolbar {background-color:#FBFAF5;border-color:#C4C4C3;border-top:none;}
+.blogtoolsection {border-color:#C4C4C3}
+.blogtoolbutton, .blogmessbuttontext {color:#333;}
+a.blogtoolbutton, .blogmessbuttontext{color:#333;}
+.blogtoolseparator {border-left:1px solid #C4C4C3;border-right:1px solid #FBFAF5;}
+
+
+/*
+table.blog-table-post-table th, 
+table.blog-table-post-table td*/
+
+/* social network*/
+div.socnet-informer {padding:5px;}
+div#sonet_events_ms_message {width:150px;}
+
+/* End */

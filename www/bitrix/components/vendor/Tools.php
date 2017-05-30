@@ -1,0 +1,1 @@
+<?phpnamespace vendor;/** * Created by PhpStorm. * User: Valya * Date: 13.03.2017 * Time: 12:29 */class Tools{    public static function debug($value, $exit = true) {        echo '<pre>';        print_r($value);        echo '</pre>';        if ($exit)            exit;    }}
